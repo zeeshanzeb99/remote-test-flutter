@@ -68,9 +68,7 @@ class _MainScreenState extends State<MainScreen> {
                 final itemWidth = constraints.maxWidth / _navItems.length;
                 return Stack(
                   children: [
-                    AnimatedPositioned(
-                      duration: const Duration(milliseconds: 0),
-                      curve: Curves.easeInOut,
+                    Positioned(
                       left: state.currentIndex * itemWidth,
                       top: 0,
                       height: kBottomNavigationBarHeight,
